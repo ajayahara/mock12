@@ -8,7 +8,7 @@ const app=express();
 app.use(express.json());
 app.use(cors())
 app.get("/",()=>{
-    resizeBy.send({"msg":"home page"})
+    res.send({"msg":"home page"})
 })
 app.use("/ad",AdRoute);
 app.listen(process.env.Port,async ()=>{
