@@ -8,7 +8,7 @@ const app=express();
 app.use(express.json());
 app.use(cors())
 app.use("/ad",AdRoute);
-app.listen(process.env.Port,async ()=>{
+app.listen(process.env.PORT,async ()=>{
     try {
         await connection
         console.log("connected to db")
